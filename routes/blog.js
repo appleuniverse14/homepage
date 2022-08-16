@@ -15,44 +15,27 @@ var myData = Bookshelf.Model.extend({
     tableName: 'contents'
 });
 
+// Generate page
 new myData().fetchAll().then((collection) => {
-    collection.toArray().forEach(element => {
-        element = element.attributes;
-        var title = element.title;
-        console.log("in title: " + title);
-        router.get('/' + title, (req, res, next) => {
-            var data = {
-                title: 'Blog page!',
-                content: element.content,
-            };
-            res.render('blog/blog', data);
-        });
-    });
-});
-
-router.get('/', (req, res, next) => {
-    new myData().fetchAll().then((collection) => {
+    // Generate main page of blog
+    router.get('/', (req, res, next) => {
         var data = {
-            title: 'Hello Blog!',
             content: collection.toArray(),
         };
         res.render('blog/index', data);
     })
-        .catch((err) => {
-            res.status(500).json({ error: true, data: { message: err.message } });
-        });
-});
-
-for (let id = 1; id <= 2; id++) {
-    router.get('/' + String(id), (req, res, next) => {
-        new myData().where('id', '=', id).fetch().then((collection) => {
+    // Generate each blog page
+    collection.toArray().forEach(element => {
+        router.get('/' + element.attributes.title, (req, res, next) => {
             var data = {
-                title: 'Blog page!',
-                content: collection,
+                content: element.attributes,
             };
             res.render('blog/blog', data);
-        })
+        });
     });
-}
+})
+.catch((err) => {
+    res.status(500).json({ error: true, data: { message: err.message } });
+});
 
 module.exports = router;

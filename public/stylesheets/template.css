@@ -1,17 +1,8 @@
-h1 {
-    font-size: 60pt;
-    color: #EEEEEE;
-    text-align: center;
-    margin: 0px;
-}
-
 body {
-    font-size: 12pt;
-    color: #999999;
-    margin: 5px;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-p {
-    font-size: 14pt;
-    margin: 0px 20px;
+a {
+    color: #00B7FF;
 }

@@ -3,22 +3,17 @@
 
 <head>
     <title>
-        <%= title %>
+        ブログ
     </title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/template.css' />
+    <link rel='stylesheet' href='/stylesheets/blog/blog.css' />
 </head>
 
 <body>
     <h1>
-        <%= title %>
+        <%- content.title %>
     </h1>
-    <p>Welcome to <%= title %>
-    </p>
-    <p>
-        <%- content %>
-    </p>
-    <%- include('../partials/content.ejs'); %>
-        <a href="/">トップページへ</a>
+    <a href="/">トップページへ</a>
 </body>
 
 </html>
