@@ -1,3 +1,4 @@
 fonts/
 .well-known/
 database/*.db
+node_modules/
