@@ -12,7 +12,6 @@ const transporter = nodemailer.createTransport({
         // メールアドレス
         user: "pocketspla@gmail.com",
         // 16桁のアプリパスワード
-        // !!サーバーの環境関数に保存すべきでしょう!!
         pass: process.env.GOOGLE_APPPASS,
     },
 });
