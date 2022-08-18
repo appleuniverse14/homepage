@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
         user: "pocketspla@gmail.com",
         // 16桁のアプリパスワード
         // !!サーバーの環境関数に保存すべきでしょう!!
-        pass: "fcineaschztjdnxc",
+        pass: process.env.GOOGLE_APPPASS,
     },
 });
 
@@ -21,15 +21,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('form', { title: 'Express', content: 'GET' });
+    res.render('form/index', {});
 });
 router.post('/', function (req, res, next) {
     var msg = 'POST: ' + req.body.name + ', ' + req.body.message;
-    res.render('form', { title: 'Express', content: msg });
+    res.render('form/index', {});
 });
 
 router.post('/complete', function(req, res, next) {
-    res.render('complete', { title: 'Express', name: req.body.name, message: req.body.message });
+    res.render('form/complete', { title: 'Express', name: req.body.name, message: req.body.message });
     var msg = req.body.name + ': ' + req.body.message;
     transporter.sendMail(
         {

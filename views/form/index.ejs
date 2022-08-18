@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        <%= title %>
+        Contact
     </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/template.css' />
@@ -12,15 +12,9 @@
 
 <body>
     <h1>
-        <%= title %>
+        Contact
     </h1>
-    <p>
-        Welcome to <%= title %>
-    </p>
-    <p>フォームのテストページ</p>
-    <p>
-        <%= content %>
-    </p>
+    <p>お名前と内容を入力し、送信ボタンを押してください。</p>
     <div id="inquiry">
         <form action="/form/complete" method="post">
             <input type="text" name="name">

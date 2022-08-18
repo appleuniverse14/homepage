@@ -208,23 +208,23 @@ a:active {
     color: #777777;
 }
 
-.links .nav-item.blog a {
+/* .links .nav-item.blog a {
     color: #777777;
-}
+} */
 
 .links .nav-item.blog a:hover {
-    /* background-color: #771122; */
-    background-color: #222222;
-    color: #777777;
+    background-color: #771122;
+    /* background-color: #222222; */
+    color: #FFFFFF;
 }
 
-.links .nav-item.contact a {
+/* .links .nav-item.contact a {
     color: #777777;
-}
+} */
 
 .links .nav-item.contact a:hover {
     background-color: #222222;
-    color: #777777;
+    color: #FFFFFF;
 }
 
 .links .nav-item a p {
