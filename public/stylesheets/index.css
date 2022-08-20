@@ -103,6 +103,7 @@ a:active {
     width: 70vw;
     /* height: 35vw; */
     height: 70vh;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -241,9 +242,10 @@ a:active {
 
     .wrapper {
         /* width: 60vw; */
-        width: 60vw;
+        width: 75vw;
         /* height: 35vw; */
         height: 70vh;
+        margin-top: 0vh;
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -281,12 +283,16 @@ a:active {
         display: inline-block;
         /* width: 16vw;
         height: 16vw; */
-        width: 25vw;
-        height: 25vw;
+        width: 35vw;
+        height: 35vw;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3%;
         padding: 0;
+    }
+
+    .links .nav-item a {
+        font-size: 4.5vw;
     }
 
     /* .wrapper {
