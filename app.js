@@ -33,6 +33,16 @@ var sitemap_content = '\
 fs.writeFileSync('./public/sitemap.xml', sitemap_content);
 console.log('"sitemap.xml" has generated.');
 
+//Generate robots.txt
+var robots_content = '\
+User-agent: *\n\
+Disallow: /contact/\n\
+\n\
+sitemap: https://zotokot.com/sitemap.xml\n\
+';
+
+fs.writeFileSync('./public/robots.txt', robots_content);
+console.log('"robots.txt" has generated.');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /contact/
-
-sitemap: https://zotokot.com/sitemap.xml
