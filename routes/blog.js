@@ -27,13 +27,14 @@ new myData().fetchAll().then((collection) => {
     // Generate each blog page
     var contents = collection.toArray();
     for (let i = 0; i < contents.length; i++){
+        // Add sitemap.xml
         var element = contents[i];
         var sitemap_content = '\n\
         <loc>https://zotokot.com/blog/' + element.attributes.title + '</loc>\n\
         <lastmod>' + String(element.attributes.date).slice(0, 10) + '</lastmod>\
         ';
         fs.appendFileSync('./public/sitemap.xml', sitemap_content);
-        console.log('test.txtに追記されました');
+
         router.get('/' + element.attributes.title, (req, res, next) => {
             var data = {
                 content: element.attributes,
@@ -41,28 +42,12 @@ new myData().fetchAll().then((collection) => {
             res.render('blog/blog', data);
         });
 
+        // Add sitemap.xml
         if (i == contents.length - 1) {
             var sitemap_content = '\n    </url>\n</urlset>\n';
             fs.appendFileSync('./public/sitemap.xml', sitemap_content);
-            console.log('test.txtに追記されました');
         }
     }
-
-
-    // collection.toArray().forEach(element => {
-    //     var sitemap_content = '\
-    //     <loc>https://zotokot.com/blog/' + element.attributes.title + '</loc>\n\
-    //     <lastmod>' + String(element.attributes.date).slice(0, 10) + '</lastmod>\n\
-    //     ';
-    //     fs.appendFileSync('./public/sitemap.xml', sitemap_content);
-    //     console.log('test.txtに追記されました');
-    //     router.get('/' + element.attributes.title, (req, res, next) => {
-    //         var data = {
-    //             content: element.attributes,
-    //         };
-    //         res.render('blog/blog', data);
-    //     });
-    // });
 })
 .catch((err) => {
     // Generate error page

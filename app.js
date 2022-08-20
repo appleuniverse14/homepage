@@ -30,9 +30,6 @@ var sitemap_content = '\
         <loc>https://zotokot.com/blog/</loc>\n\
         <lastmod>' + getFileUpdatedDate(path_blog) + '</lastmod>\
 ';
-console.log(getFileUpdatedDate(path_index));
-console.log(typeof(getFileUpdatedDate(path_index)));
-console.log(path.resolve(path_index));
 fs.writeFileSync('./public/sitemap.xml', sitemap_content);
 console.log('"sitemap.xml" has generated.');
 

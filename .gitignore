@@ -1,4 +1,6 @@
 fonts/
 .well-known/
-database/*.db
+database/*
+!importToSQLite3.sh
 node_modules/
+public/sitemap.xml
