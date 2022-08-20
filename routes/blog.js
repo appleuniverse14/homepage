@@ -8,9 +8,9 @@ var knex = require('knex')({
     useNullAsDefault: true,
 });
 var Bookshelf = require('bookshelf')(knex);
+var fs = require('fs');
 
 var router = express.Router();
-var db = new sqlite3.Database('database/test.db');
 var myData = Bookshelf.Model.extend({
     tableName: 'contents'
 });
@@ -25,17 +25,50 @@ new myData().fetchAll().then((collection) => {
         res.render('blog/index', data);
     })
     // Generate each blog page
-    collection.toArray().forEach(element => {
+    var contents = collection.toArray();
+    for (let i = 0; i < contents.length; i++){
+        var element = contents[i];
+        var sitemap_content = '\n\
+        <loc>https://zotokot.com/blog/' + element.attributes.title + '</loc>\n\
+        <lastmod>' + String(element.attributes.date).slice(0, 10) + '</lastmod>\
+        ';
+        fs.appendFileSync('./public/sitemap.xml', sitemap_content);
+        console.log('test.txtに追記されました');
         router.get('/' + element.attributes.title, (req, res, next) => {
             var data = {
                 content: element.attributes,
             };
             res.render('blog/blog', data);
         });
-    });
+
+        if (i == contents.length - 1) {
+            var sitemap_content = '\n    </url>\n</urlset>\n';
+            fs.appendFileSync('./public/sitemap.xml', sitemap_content);
+            console.log('test.txtに追記されました');
+        }
+    }
+
+
+    // collection.toArray().forEach(element => {
+    //     var sitemap_content = '\
+    //     <loc>https://zotokot.com/blog/' + element.attributes.title + '</loc>\n\
+    //     <lastmod>' + String(element.attributes.date).slice(0, 10) + '</lastmod>\n\
+    //     ';
+    //     fs.appendFileSync('./public/sitemap.xml', sitemap_content);
+    //     console.log('test.txtに追記されました');
+    //     router.get('/' + element.attributes.title, (req, res, next) => {
+    //         var data = {
+    //             content: element.attributes,
+    //         };
+    //         res.render('blog/blog', data);
+    //     });
+    // });
 })
 .catch((err) => {
-    res.status(500).json({ error: true, data: { message: err.message } });
+    // Generate error page
+    router.get('/', (req, res, next) => {
+        res.status(500).json({ error: true, data: { message: err.message } });
+    })
 });
 
 module.exports = router;

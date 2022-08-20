@@ -3,12 +3,38 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fs = require('fs');
 
 var indexRouter = require('./routes/index');
 var formRouter = require('./routes/form');
 var blogRouter = require('./routes/blog');
 
 var app = express();
+
+// Generate sitemap.xml
+function getFileUpdatedDate(pathname){
+    const stats = fs.statSync(pathname);
+    return stats.mtime.toISOString().split('T')[0];
+}
+var path_index = './views/index.ejs';
+var path_contact = './views/form/';
+var path_blog = './views/blog/';
+var sitemap_content = '\
+<?xml version="1.0" encoding="UTF-8"?>\n\
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\
+    <url>\n\
+        <loc>https://zotokot.com/</loc>\n\
+        <lastmod>' + getFileUpdatedDate(path_index) + '</lastmod>\n\
+        <loc>https://zotokot.com/contact/</loc>\n\
+        <lastmod>' + getFileUpdatedDate(path_contact) + '</lastmod>\n\
+        <loc>https://zotokot.com/blog/</loc>\n\
+        <lastmod>' + getFileUpdatedDate(path_blog) + '</lastmod>\
+';
+console.log(getFileUpdatedDate(path_index));
+console.log(typeof(getFileUpdatedDate(path_index)));
+console.log(path.resolve(path_index));
+fs.writeFileSync('./public/sitemap.xml', sitemap_content);
+console.log('"sitemap.xml" has generated.');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +47,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/form', formRouter);
+app.use('/contact', formRouter);
 app.use('/blog', blogRouter);
 
 // catch 404 and forward to error handler
