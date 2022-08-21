@@ -5,9 +5,11 @@ body {
 
 a {
     color: #00B7FF;
+    margin-top: 5vh;
 }
 
 input {
     width: 20vw;
     height: 5vh;
+    margin-right: 5vw
 }
