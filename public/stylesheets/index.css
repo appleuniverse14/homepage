@@ -148,6 +148,36 @@ a:active {
     padding: 0;
 }
 
+.links .nav-item.twitter {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.links .nav-item.github {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links .nav-item.soundcloud {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.links .nav-item.about-me {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.links .nav-item.blog {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links .nav-item.contact {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -234,6 +264,7 @@ a:active {
 /* @media (max-width: 960px){ */
 @media (orientation: portrait) {
     .header {
+        margin-top: 3vh;
         height: 15vh;
         width: 100vw;
         text-align: center;
@@ -241,7 +272,7 @@ a:active {
 
     .wrapper {
         /* width: 60vw; */
-        width: 75vw;
+        width: 90vw;
         /* height: 35vw; */
         height: 70vh;
         margin-left: auto;
@@ -281,40 +312,70 @@ a:active {
         display: inline-block;
         /* width: 16vw;
         height: 16vw; */
-        width: 35vw;
-        height: 35vw;
+        width: 40vw;
+        height: 40vw;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3%;
         padding: 0;
     }
 
+    .links .nav-item.twitter {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .links .nav-item.github {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .links .nav-item.soundcloud {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .links .nav-item.about-me {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .links .nav-item.blog {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .links .nav-item.contact {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
     .links .nav-item a {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .links .nav-item.twitter a span {
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     .links .nav-item.github a span {
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     .links .nav-item.soundcloud a span {
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     .links .nav-item.about-me a span {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .links .nav-item.blog a span {
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     .links .nav-item.contact a span {
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     /* .wrapper {
