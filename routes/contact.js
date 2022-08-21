@@ -20,15 +20,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('form/index', {});
+    res.render('contact/index', {});
 });
 router.post('/', function (req, res, next) {
     var msg = 'POST: ' + req.body.name + ', ' + req.body.message;
-    res.render('form/index', {});
+    res.render('contact/index', {});
 });
 
 router.post('/complete', function(req, res, next) {
-    res.render('form/complete', { title: 'Express', name: req.body.name, message: req.body.message });
+    res.render('contact/complete', { title: 'Express', name: req.body.name, message: req.body.message });
     var msg = req.body.name + ': ' + req.body.message;
     transporter.sendMail(
         {

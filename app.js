@@ -6,7 +6,7 @@ var logger = require('morgan');
 var fs = require('fs');
 
 var indexRouter = require('./routes/index');
-var formRouter = require('./routes/form');
+var contactRouter = require('./routes/contact');
 var blogRouter = require('./routes/blog');
 
 var app = express();
@@ -17,7 +17,7 @@ function getFileUpdatedDate(pathname){
     return stats.mtime.toISOString().split('T')[0];
 }
 var path_index = './views/index.ejs';
-var path_contact = './views/form/';
+var path_contact = './views/contact/';
 var path_blog = './views/blog/';
 var sitemap_content = '\
 <?xml version="1.0" encoding="UTF-8"?>\n\
@@ -44,7 +44,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/contact', formRouter);
+app.use('/contact', contactRouter);
 app.use('/blog', blogRouter);
 
 // catch 404 and forward to error handler
