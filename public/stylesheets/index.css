@@ -103,7 +103,6 @@ a:active {
     width: 70vw;
     /* height: 35vw; */
     height: 70vh;
-    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -235,7 +234,6 @@ a:active {
 /* @media (max-width: 960px){ */
 @media (orientation: portrait) {
     .header {
-        margin-top: 3vh;
         height: 15vh;
         width: 100vw;
         text-align: center;
@@ -246,7 +244,6 @@ a:active {
         width: 75vw;
         /* height: 35vw; */
         height: 70vh;
-        margin-top: 0vh;
         margin-left: auto;
         margin-right: auto;
         position: relative;
