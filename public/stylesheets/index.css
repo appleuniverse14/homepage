@@ -291,7 +291,31 @@ a:active {
     }
 
     .links .nav-item a {
-        font-size: 4.5vw;
+        font-size: 8vw;
+    }
+
+    .links .nav-item.twitter a span {
+        font-size: 8vw;
+    }
+
+    .links .nav-item.github a span {
+        font-size: 8vw;
+    }
+
+    .links .nav-item.soundcloud a span {
+        font-size: 7vw;
+    }
+
+    .links .nav-item.about-me a span {
+        font-size: 8vw;
+    }
+
+    .links .nav-item.blog a span {
+        font-size: 8vw;
+    }
+
+    .links .nav-item.contact a span {
+        font-size: 8vw;
     }
 
     /* .wrapper {
