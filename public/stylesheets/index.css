@@ -355,27 +355,27 @@ a:active {
     }
 
     .links .nav-item.twitter a span {
-        font-size: 8vw;
-    }
-
-    .links .nav-item.github a span {
-        font-size: 8vw;
-    }
-
-    .links .nav-item.soundcloud a span {
         font-size: 7vw;
     }
 
+    .links .nav-item.github a span {
+        font-size: 7vw;
+    }
+
+    .links .nav-item.soundcloud a span {
+        font-size: 5.75vw;
+    }
+
     .links .nav-item.about-me a span {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .links .nav-item.blog a span {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .links .nav-item.contact a span {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     /* .wrapper {
