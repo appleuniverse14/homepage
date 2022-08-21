@@ -4,6 +4,7 @@ body {
 }
 
 a {
+    display: block;
     color: #00B7FF;
     margin-top: 5vh;
 }
