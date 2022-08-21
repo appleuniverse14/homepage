@@ -148,6 +148,36 @@ a:active {
     padding: 0;
 }
 
+.links .nav-item.twitter {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.links .nav-item.github {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links .nav-item.soundcloud {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.links .nav-item.about-me {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.links .nav-item.blog {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links .nav-item.contact {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -288,6 +318,36 @@ a:active {
         margin-right: auto;
         margin-bottom: 3%;
         padding: 0;
+    }
+
+    .links .nav-item.twitter {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .links .nav-item.github {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .links .nav-item.soundcloud {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .links .nav-item.about-me {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .links .nav-item.blog {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .links .nav-item.contact {
+        margin-left: auto;
+        margin-right: 0px;
     }
 
     .links .nav-item a {
