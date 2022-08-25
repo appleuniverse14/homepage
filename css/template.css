@@ -1,5 +1,105 @@
-header {
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+    height: 100vh;
+}
+
+body {
+    background-color: #333333;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.header .logo_header {
+    height: 100%;
+}
+
+.footer {
+    height: 15vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.footer .logo_footer {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.main .container-left {
+    width: 12.5vw;
+    background-color: #FF0000;
+}
+
+.main .container-center {
+    width: 75vw;
+    background-color: #FFFFFF;
+}
+
+.main .container-right {
+    width: 12.5vw;
+    background-color: #FF0000;
+    text-align: center;
+}
+
+.button-to-top {
+    position: fixed;
+    width: 10vw;
+    right: 0vw;
+    bottom: 0vh;
+    text-align: center;
+    background-color: #00FF00;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-container div {
+    width: 30vw;
+    background-color: #00FFFF;
+    text-align: center;
+}
+
+.navigation-container ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.navigation-container ul .nav-item {
+    width: 10vw;
+    border-style: solid;
+    border-color: #000000;
+    box-sizing: border-box;
+    border-width: medium medium medium 0;
+    background-color: #00FF00;
+}
+
+.navigation-container ul .nav-item:first-child {
+    background-color: #FFFF00;
+    border-width: medium medium medium medium;
+}
+
+.navigation-container ul .nav-item a {
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.button-to-top img {
     width: 100%;
-    /* height: 50px; */
-    background-color: #888888;
 }
