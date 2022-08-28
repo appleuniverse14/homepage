@@ -1,12 +1,36 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'heitistd';
+    src: url('../fonts/adobeheitistd-regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'biz-ud_gothic';
+    src: url('../fonts/BIZ-UDGOTHICR.TTC') format('truetype');
+}
+
+a {
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+a.link,
+a:visited,
+a:hover,
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     height: 100vh;
 }
 
 body {
     background-color: #333333;
+    font-family: 'heitistd';
     padding: 0;
     margin: 0;
 }
@@ -44,6 +68,13 @@ body {
 .main .container-center {
     width: 75vw;
     background-color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main .container-center p {
+    margin: 0;
+    font-family: 'biz-ud_gothic';
 }
 
 .main .container-right {
@@ -58,7 +89,15 @@ body {
     right: 0vw;
     bottom: 0vh;
     text-align: center;
+}
+
+.button-to-top a {
+    display: block;
     background-color: #00FF00;
+}
+
+.button-to-top a:hover {
+    background-color: #000000;
 }
 
 .navigation-container {
@@ -67,7 +106,7 @@ body {
 }
 
 .navigation-container div {
-    width: 30vw;
+    width: 45vw;
     background-color: #00FFFF;
     text-align: center;
 }
@@ -82,22 +121,40 @@ body {
 }
 
 .navigation-container ul .nav-item {
-    width: 10vw;
+    width: 15vw;
+    height: 5vh;
     border-style: solid;
-    border-color: #000000;
+    border-color: #333333;
     box-sizing: border-box;
     border-width: medium medium medium 0;
-    background-color: #00FF00;
+    background-color: #000000;
 }
 
 .navigation-container ul .nav-item:first-child {
-    background-color: #FFFF00;
     border-width: medium medium medium medium;
 }
 
 .navigation-container ul .nav-item a {
-    font-size: 1vw;
-    text-decoration: none;
+    display: block;
+    font-size: 2.5vh;
+    height: 100%;
+    position: relative;
+}
+
+.navigation-container ul .nav-item a:hover {
+    background-color: #888888;
+}
+
+.navigation-container ul .nav-item a span {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .button-to-top img {
