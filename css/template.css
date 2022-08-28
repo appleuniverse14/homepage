@@ -83,11 +83,22 @@ body {
 
 .navigation-container ul .nav-item {
     width: 10vw;
+    height: 5vh;
     border-style: solid;
     border-color: #000000;
     box-sizing: border-box;
     border-width: medium medium medium 0;
+    /* position: relative; */
     background-color: #00FF00;
+}
+
+.navigation-container ul .nav-item a span {
+    line-height: 100%;
+    /* position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 0;
+    text-align: center; */
 }
 
 .navigation-container ul .nav-item:first-child {
@@ -96,6 +107,7 @@ body {
 }
 
 .navigation-container ul .nav-item a {
+    display: block;
     font-size: 1vw;
     text-decoration: none;
 }
