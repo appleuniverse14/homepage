@@ -46,7 +46,8 @@ h6 {
 
 p {
     margin: 0px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 button,
