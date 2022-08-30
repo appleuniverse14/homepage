@@ -44,6 +44,18 @@ h6 {
     margin: 0;
 }
 
+p {
+    margin-left: 50px;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
 
 /* Header */
 .header {
@@ -83,11 +95,11 @@ h6 {
 .main .container-center {
     width: 75vw;
     background-color: #FFFFFF;
-    padding: 2vh 2vw 2vh 2vw;
+    padding: 5vh 4vw 5vh 4vw;
 }
 
 .main .container-center p {
-    margin-left: 30px;
+    margin-left: 50px;
     font-family: 'biz-ud_gothic';
 }
 
@@ -96,18 +108,31 @@ h6 {
 .main .container-center a:visited,
 .main .container-center a:hover,
 .main .container-center a:active {
-    text-decoration: underline;
-    color: #000000;
+    background-color: #01adfd;
+    padding: 7.5px;
+    border-radius: 9999px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #01adfd;
+    transition: 0.25s;
 }
 
-.main .container-center a span {
-    color: #000000;
-    font-weight: bold;
+.main .container-center a:hover {
+    background-color: #FFFFFF;
+    color: #01adfd;
 }
+
+/* 
+.main .container-center a span {
+    color: #FFFFFF;
+    font-weight: bold;
+} */
 
 .main .container-center #inquiry {
-    margin-top: 75px;
-    margin-left: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .main .container-center #inquiry p {
@@ -120,9 +145,29 @@ h6 {
     margin-bottom: 20px;
 }
 
-textarea {
+.main .container-center input {
     display: block;
     margin-top: 8px;
+}
+
+.main .container-center textarea {
+    display: block;
+    margin-top: 8px;
+}
+
+.main .container-center .button {
+    /* display: inline-block; */
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100px;
+    transition: 0.25s;
+}
+
+.main .container-center .button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .main .container-right {
