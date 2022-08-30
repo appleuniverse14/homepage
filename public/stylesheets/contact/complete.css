@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'heitistd';
+    src: url('../fonts/adobeheitistd-regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'biz-ud_gothic';
+    src: url('../fonts/BIZ-UDGOTHICR.TTC') format('truetype');
+}
+
+.main .container-center .contentcheck {
+    margin-top: 40px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    border-radius: 9999px;
+    background-color: #CCCCCC;
+}
+
+.main .container-center>p {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.main .container-center>p:first-child {
+    margin-bottom: 30px;
+}
+
+.main .container-center .contentcheck>p:nth-child(1) {
+    font-family: 'heitistd';
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main .container-center .name .form-title,
+.main .container-center .message .form-title {
+    font-family: 'heitistd';
+    font-weight: bold;
+}
+
+.main .container-center div {
+    margin-left: 50px;
+}
+
+.main .container-center div .content {
+    margin-left: 80px;
+}
+
+.main .container-center .contentcheck .name .content {
+    margin-bottom: 20px;
+}
+
+.main .container-center>p:last-child {
+    margin-top: 50px;
+}
