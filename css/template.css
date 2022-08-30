@@ -87,13 +87,46 @@ h6 {
 }
 
 .main .container-center p {
-    margin: 0;
+    margin-left: 30px;
     font-family: 'biz-ud_gothic';
+}
+
+.main .container-center a,
+.main .container-center a:link,
+.main .container-center a:visited,
+.main .container-center a:hover,
+.main .container-center a:active {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.main .container-center a span {
+    color: #000000;
+    font-weight: bold;
+}
+
+.main .container-center #inquiry {
+    margin-top: 75px;
+    margin-left: 30px;
+}
+
+.main .container-center #inquiry p {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.main .container-center #inquiry .message {
+    margin-bottom: 20px;
+}
+
+textarea {
+    display: block;
+    margin-top: 8px;
 }
 
 .main .container-right {
     width: 12.5vw;
-    /* background-color: #FF0000; */
     text-align: center;
 }
 
@@ -156,22 +189,17 @@ h6 {
     height: 5vh;
     line-height: 100%;
     font-weight: bold;
-    /* margin-left: 1vw; */
 }
 
 /* Button to top */
 .button-to-top {
     position: fixed;
-    width: 10vw;
-    height: 10vw;
+    width: 7.5vw;
+    height: 7.5vw;
     right: 1vmin;
-    bottom: 2vmin;
+    bottom: 3vmin;
     text-align: center;
-    /* border: #FFFFFF;
-    border-style: solid;
-    border-width: 0.01rem; */
     border-radius: 50%;
-    /* background-color: aqua; */
 }
 
 .button-to-top a {
@@ -209,5 +237,5 @@ h6 {
 .button-to-top a p {
     font-size: 1vw;
     font-weight: bold;
-    padding-top: 1vw;
+    padding-top: 0.5vw;
 }
