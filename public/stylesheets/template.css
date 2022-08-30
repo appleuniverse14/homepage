@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'heitistd';
-    src: url('../fonts/adobeheitistd-regular.otf') format('truetype');
+    src: url('/fonts/adobeheitistd-regular.otf') format('truetype');
 }
 
 @font-face {
     font-family: 'biz-ud_gothic';
-    src: url('../fonts/BIZ-UDGOTHICR.TTC') format('truetype');
+    src: url('/fonts/BIZ-UDGOTHICR.TTC') format('truetype');
 }
 
 a {
