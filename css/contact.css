@@ -1,0 +1,60 @@
+.main .container-center a,
+.main .container-center a:link,
+.main .container-center a:visited,
+.main .container-center a:hover,
+.main .container-center a:active {
+    background-color: #01adfd;
+    padding: 7.5px;
+    border-radius: 9999px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #01adfd;
+    transition: 0.25s;
+}
+
+.main .container-center a:hover {
+    background-color: #FFFFFF;
+    color: #01adfd;
+}
+
+.main .container-center #inquiry {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.main .container-center #inquiry p {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.main .container-center #inquiry .message {
+    margin-bottom: 20px;
+}
+
+.main .container-center input {
+    display: block;
+    margin-top: 8px;
+}
+
+.main .container-center textarea {
+    display: block;
+    margin-top: 8px;
+}
+
+.main .container-center .button {
+    /* display: inline-block; */
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100px;
+    transition: 0.25s;
+}
+
+.main .container-center .button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
