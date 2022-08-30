@@ -11,22 +11,59 @@
     </title>
     <link rel='stylesheet' href='/stylesheets/template.css' />
     <link rel='stylesheet' href='/stylesheets/contact/index.css' />
+    <script type="text/javascript" src="/javascripts/formcheck.js"></script>
+    <script src="https://kit.fontawesome.com/635cb748ea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>
-        Contact
-    </h1>
-    <p>お名前と内容を入力し、送信ボタンを押してください。</p>
-    <div id="inquiry">
-        <form action="/contact/complete" method="post">
-            <input type="text" name="name" placeholder="お名前">
-            <input type="text" name="message" placeholder="内容">
-            <input type="submit" value="送信">
-        </form>
+    <header class="header">
+        <a href="/">
+            <img src="/images/logo_ringo_transparent_all.png" class="logo_header">
+        </a>
+    </header>
+    <div class="main">
+        <div class="container-left"></div>
+        <div class="container-center">
+            <h1>CONTACT</h1>
+            <p>お名前とお問い合わせ内容を入力し、送信ボタンを押してください。</p>
+            <p>Twitterのダイレクトメッセージも開放しています。→ <a href="https://twitter.com/zotokot"><span>Twitter</span></a>
+            </p>
+            <div id="inquiry">
+                <form name="inquiryform" action="/contact/complete" method="post" onSubmit="return formcheck()">
+                    <div class="name">
+                        <p>お名前</p>
+                        <input type="text" name="name" placeholder="お名前">
+                    </div>
+                    <div class="message">
+                        <p>内容</p>
+                        <textarea name="message" cols="40" rows="4" maxlength="10000"
+                            placeholder="内容(10000字まで)"></textarea>
+                    </div>
+                    <input class="button" type="submit" value="送信">
+                </form>
+            </div>
+        </div>
+        <div class="container-right"></div>
     </div>
-    <a href="/">トップページへ</a>
-
+    <footer class="footer">
+        <div class="navigation-container">
+            <ul>
+                <li class="nav-item">
+                    <a href="/"><i class="fa-solid fa-home"></i><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog"><i class="fa-solid fa-rss"></i><span>BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact"><i class="fa-solid fa-address-card"></i><span>CONTACT</span></a>
+                </li>
+            </ul>
+        </div>
+        <a href="/">
+            <img src="/images/logo_ringo_transparent_all.png" class="logo_footer">
+        </a>
+    </footer>
+    <script type="text/javascript" src="../js/contact.js"></script>
 </body>
 
 </html>

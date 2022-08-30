@@ -8,6 +8,7 @@ var fs = require('fs');
 var indexRouter = require('./routes/index');
 var contactRouter = require('./routes/contact');
 var blogRouter = require('./routes/blog');
+var NotFoundRouter = require('./routes/404');
 
 var app = express();
 
@@ -19,6 +20,7 @@ function getFileUpdatedDate(pathname){
 var path_index = './views/index.ejs';
 var path_contact = './views/contact/';
 var path_blog = './views/blog/';
+var path_404 = './views/404/';
 var sitemap_content = '\
 <?xml version="1.0" encoding="UTF-8"?>\n\
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\
@@ -28,6 +30,8 @@ var sitemap_content = '\
         <loc>https://zotokot.com/contact/</loc>\n\
         <lastmod>' + getFileUpdatedDate(path_contact) + '</lastmod>\n\
         <loc>https://zotokot.com/blog/</loc>\n\
+        <lastmod>' + getFileUpdatedDate(path_blog) + '</lastmod>\n\
+        <loc>https://zotokot.com/404/</loc>\n\
         <lastmod>' + getFileUpdatedDate(path_blog) + '</lastmod>\
 ';
 fs.writeFileSync('./public/sitemap.xml', sitemap_content);
@@ -46,6 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/contact', contactRouter);
 app.use('/blog', blogRouter);
+app.use('/404', NotFoundRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
