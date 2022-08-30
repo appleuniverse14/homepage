@@ -3,3 +3,4 @@ fonts/
 database/*
 !importToSQLite3.sh
 node_modules/
+google*.html

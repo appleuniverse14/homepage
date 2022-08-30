@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /contact/
+Disallow: /form/
+Disallow: /404/
+
+sitemap: https://zotokot.com/sitemap.xml
