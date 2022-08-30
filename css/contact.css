@@ -1,3 +1,7 @@
+.main .container-center>p {
+    margin-bottom: 10px;
+}
+
 .main .container-center a,
 .main .container-center a:link,
 .main .container-center a:visited,
@@ -36,12 +40,16 @@
 
 .main .container-center input {
     display: block;
-    margin-top: 8px;
+    margin-top: 1px;
+}
+
+.main .container-center #inquiry form .message>p {
+    margin-top: 20px;
 }
 
 .main .container-center textarea {
     display: block;
-    margin-top: 8px;
+    margin-top: 1px;
 }
 
 .main .container-center .button {
