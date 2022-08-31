@@ -2,3 +2,13 @@
     color: #000000;
     text-decoration: underline;
 }
+
+.main .container-center>div {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.main .container-center th {
+    padding-right: 10px;
+}

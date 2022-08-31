@@ -30,12 +30,12 @@ new myData().fetchAll().then((collection) => {
         // Add sitemap.xml
         var element = contents[i];
         var sitemap_content = '\n\
-        <loc>https://zotokot.com/blog/' + element.attributes.title + '</loc>\n\
+        <loc>https://zotokot.com/blog/' + element.attributes.url + '</loc>\n\
         <lastmod>' + String(element.attributes.date).slice(0, 10) + '</lastmod>\
         ';
         fs.appendFileSync('./public/sitemap.xml', sitemap_content);
 
-        router.get('/' + element.attributes.title, (req, res, next) => {
+        router.get('/' + element.attributes.url, (req, res, next) => {
             var data = {
                 content: element.attributes,
             };
