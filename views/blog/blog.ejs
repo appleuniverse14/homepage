@@ -10,6 +10,7 @@
     </title>
     <link rel='stylesheet' href='/stylesheets/template.css' />
     <link rel='stylesheet' href='/stylesheets/blog/blog.css' />
+    <script src="https://kit.fontawesome.com/635cb748ea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,13 +22,20 @@
     <div class="main">
         <div class="container-left"></div>
         <div class="container-center">
-            <h1>
-                <%- content.title %>
-            </h1>
-            <h5>
-                <%- content.date %>
-            </h5>
-            <%- content.content %>
+            <div class="blog-title-container">
+                <img src="/images/blog/<%- content.title %>/<%- content.title %>.png" class="blog-image">
+                <div>
+                    <h1 class="blog-title">
+                        <%- content.title %>
+                    </h1>
+                    <h6 class="blog-date">
+                        <%- content.date %>
+                    </h6>
+                </div>
+            </div>
+            <div class="blog-sentence-container">
+                <%- content.content %>
+            </div>
         </div>
         <div class="container-right"></div>
     </div>
