@@ -13,14 +13,50 @@
 </head>
 
 <body>
-    <h1>
-        <%- content.title %>
-    </h1>
-    <h5>
-        <%- content.date %>
-    </h5>
-    <%- content.content %>
-        <a href="/">トップページへ</a>
+    <header class="header">
+        <a href="/">
+            <img src="/images/logo_ringo_transparent_all.png" class="logo_header">
+        </a>
+    </header>
+    <div class="main">
+        <div class="container-left"></div>
+        <div class="container-center">
+            <h1>
+                <%- content.title %>
+            </h1>
+            <h5>
+                <%- content.date %>
+            </h5>
+            <%- content.content %>
+        </div>
+        <div class="container-right"></div>
+    </div>
+    <footer class="footer">
+        <div class="navigation-container">
+            <ul>
+                <li class="nav-item">
+                    <a href="/"><i class="fa-solid fa-home"></i><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog"><i class="fa-solid fa-rss"></i><span>BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact"><i class="fa-solid fa-address-card"></i><span>CONTACT</span></a>
+                </li>
+            </ul>
+        </div>
+        <a href="/">
+            <img src="/images/logo_ringo_transparent_all.png" class="logo_footer">
+        </a>
+    </footer>
+    <div class="button-to-top">
+        <a href="#">
+            <img src="/images/logo_inversedStar_black.png" class="go-to-top">
+            <img src="/images/logo_inversedStar_blackwhite_transparent.png" class="go-to-top">
+            <p>￪ TOP</p>
+        </a>
+    </div>
+    <!-- <script type="text/javascript" src="/javascripts/gototop.js"></script> -->
 </body>
 
 </html>

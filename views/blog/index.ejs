@@ -10,34 +10,70 @@
     </title>
     <link rel='stylesheet' href='/stylesheets/template.css' />
     <link rel='stylesheet' href='/stylesheets/blog/index.css' />
+    <!-- <script type="text/javascript" src="/javascripts/gototop.js"></script> -->
+    <script src="https://kit.fontawesome.com/635cb748ea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>
-        Contents
-    </h1>
-    <div>
-        <table>
-            <% for(var i in content){ %>
-                <tr>
-                    <% var obj=content[i].attributes; %>
-                        <th>
-                            <%= obj.id %>
-                        </th>
-                        <td>
-                            <a href="<%= " blog/" + obj.title %>"><%= obj.title %></a>
-                        </td>
-                        <!-- <td>
-                            <%= obj.date %>
-                        </td> -->
-                        <!-- <td>
-                            <%= obj.tag %>
-                        </td> -->
-                </tr>
-                <% } %>
-        </table>
+    <header class="header">
+        <a href="/">
+            <img src="/images/logo_ringo_transparent_all.png" class="logo_header">
+        </a>
+    </header>
+    <div class="main">
+        <div class="container-left"></div>
+        <div class="container-center">
+            <h1>Contents</h1>
+            <div>
+                <table>
+                    <% for(var i in content){ %>
+                        <tr>
+                            <% var obj=content[i].attributes; %>
+                                <th>
+                                    <%= obj.id %>
+                                </th>
+                                <td>
+                                    <a href="<%= " blog/" + obj.title %>"><%= obj.title %></a>
+                                </td>
+                                <!-- <td>
+                                    <%= obj.date %>
+                                </td> -->
+                                <!-- <td>
+                                    <%= obj.tag %>
+                                </td> -->
+                        </tr>
+                        <% } %>
+                </table>
+            </div>
+        </div>
+        <div class="container-right"></div>
     </div>
-    <a href="/">トップページへ</a>
+    <footer class="footer">
+        <div class="navigation-container">
+            <ul>
+                <li class="nav-item">
+                    <a href="/"><i class="fa-solid fa-home"></i><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog"><i class="fa-solid fa-rss"></i><span>BLOG</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact"><i class="fa-solid fa-address-card"></i><span>CONTACT</span></a>
+                </li>
+            </ul>
+        </div>
+        <a href="/">
+            <img src="/images/logo_ringo_transparent_all.png" class="logo_footer">
+        </a>
+    </footer>
+    <div class="button-to-top">
+        <a href="#">
+            <img src="/images/logo_inversedStar_black.png" class="go-to-top">
+            <img src="/images/logo_inversedStar_blackwhite_transparent.png" class="go-to-top">
+            <p>￪ TOP</p>
+        </a>
+    </div>
+    <!-- <script type="text/javascript" src="/javascripts/gototop.js"></script> -->
 </body>
 
 </html>
