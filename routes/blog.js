@@ -28,17 +28,21 @@ new myData().fetchAll().then((collection) => {
     var contents = collection.toArray();
     for (let i = 0; i < contents.length; i++){
         // Add sitemap.xml
-        var element = contents[i];
         var sitemap_content = '\n\
-        <loc>https://zotokot.com/blog/' + element.attributes.url + '</loc>\n\
-        <lastmod>' + String(element.attributes.date).slice(0, 10) + '</lastmod>\
+        <loc>https://zotokot.com/blog/' + contents[i].attributes.url + '</loc>\n\
+        <lastmod>' + String(contents[i].attributes.date).slice(0, 10) + '</lastmod>\
         ';
         fs.appendFileSync('./public/sitemap.xml', sitemap_content);
 
-        router.get('/' + element.attributes.url, (req, res, next) => {
+        router.get('/' + contents[i].attributes.url, (req, res, next) => {
             var data = {
-                content: element.attributes,
+                content: contents[i].attributes,
             };
+
+
+            console.log(data);
+
+
             res.render('blog/blog', data);
         });
 

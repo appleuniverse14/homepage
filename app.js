@@ -20,7 +20,7 @@ function getFileUpdatedDate(pathname){
 var path_index = './views/index.ejs';
 var path_contact = './views/contact/';
 var path_blog = './views/blog/';
-var path_404 = './views/404/';
+var path_404 = './views/404.ejs';
 var sitemap_content = '\
 <?xml version="1.0" encoding="UTF-8"?>\n\
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\
@@ -32,7 +32,7 @@ var sitemap_content = '\
         <loc>https://zotokot.com/blog/</loc>\n\
         <lastmod>' + getFileUpdatedDate(path_blog) + '</lastmod>\n\
         <loc>https://zotokot.com/404/</loc>\n\
-        <lastmod>' + getFileUpdatedDate(path_blog) + '</lastmod>\
+        <lastmod>' + getFileUpdatedDate(path_404) + '</lastmod>\
 ';
 fs.writeFileSync('./public/sitemap.xml', sitemap_content);
 console.log('"sitemap.xml" has generated.');
