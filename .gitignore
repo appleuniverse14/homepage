@@ -3,5 +3,6 @@ fonts/
 database/*
 !importToSQLite3.sh
 node_modules/
+public/images/blog/
 sitemap.xml
 google*.html
