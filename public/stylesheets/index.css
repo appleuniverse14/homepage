@@ -168,12 +168,12 @@ a:active {
     margin-right: auto;
 }
 
-.links .nav-item.about-me {
+.links .nav-item.contact {
     margin-left: auto;
     margin-right: auto;
 }
 
-.links .nav-item.contact {
+.links .nav-item.about-me {
     margin-left: auto;
     margin-right: 0px;
 }
@@ -251,14 +251,16 @@ a:active {
 }
 
 .links .nav-item.about-me a {
-    background-color: #222222;
-    color: #FFFFFF;
+    /* background-color: #222222;
+    color: #FFFFFF; */
+    background-color: #000000;
+    color: #666666;
 }
 
-.links .nav-item.about-me a:hover {
+/* .links .nav-item.about-me a:hover {
     background-color: #666666;
     color: #FFFFFF;
-}
+} */
 
 .links .nav-item.contact a {
     background-color: #222222;
@@ -353,12 +355,12 @@ a:active {
         margin-right: 0px;
     }
 
-    .links .nav-item.about-me {
+    .links .nav-item.contact {
         margin-left: 0px;
         margin-right: auto;
     }
 
-    .links .nav-item.contact {
+    .links .nav-item.about-me {
         margin-left: auto;
         margin-right: 0px;
     }
