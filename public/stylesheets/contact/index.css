@@ -1,4 +1,12 @@
-.main .container-center>p {
+.main .container-center>h1 {
+    margin-bottom: 40px;
+}
+
+.main .container-center .text-container {
+    background-color: #FF0000;
+}
+
+.main .container-center .text-container>p {
     margin-bottom: 10px;
 }
 
