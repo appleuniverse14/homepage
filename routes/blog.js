@@ -39,11 +39,6 @@ new myData().fetchAll().then((collection) => {
             var data = {
                 content: contents[i].attributes,
             };
-
-
-            console.log(data);
-
-
             res.render('blog/blog', data);
         });
 
@@ -56,9 +51,7 @@ new myData().fetchAll().then((collection) => {
 })
 .catch((err) => {
     // Generate error page
-    router.get('/', (req, res, next) => {
-        res.status(500).json({ error: true, data: { message: err.message } });
-    })
+    return res.status(500).json({ error: true, data: { message: err.message } });
 });
 
 module.exports = router;
