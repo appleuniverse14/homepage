@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /contact/
 Disallow: /form/
 Disallow: /404/
 

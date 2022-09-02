@@ -27,7 +27,7 @@
                 <table>
                     <% for(var i in content){ %>
                         <tr>
-                            <% var obj=content[i].attributes; %>
+                            <% var obj=content[array_len-i-1].attributes; %>
                                 <th>
                                     <%= obj.id %>
                                 </th>

@@ -21,6 +21,7 @@ new myData().fetchAll().then((collection) => {
     router.get('/', (req, res, next) => {
         var data = {
             content: collection.toArray(),
+            array_len: collection.toArray().length,
         };
         res.render('blog/index', data);
     })
