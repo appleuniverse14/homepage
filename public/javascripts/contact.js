@@ -8,3 +8,7 @@ function formcheck() {
         return false;
     }
 }
+
+function onSubmit(token) {
+    document.getElementById("form-button").submit();
+}

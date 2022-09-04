@@ -10,8 +10,9 @@
     </title>
     <link rel='stylesheet' href='/stylesheets/template.css' />
     <link rel='stylesheet' href='/stylesheets/contact/index.css' />
-    <script type="text/javascript" src="/javascripts/formcheck.js"></script>
+    <script type="text/javascript" src="/javascripts/contact.js"></script>
     <script src="https://kit.fontawesome.com/635cb748ea.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -40,6 +41,8 @@
                             placeholder="内容(10000字まで)"></textarea>
                     </div>
                     <input class="button" type="submit" value="送信">
+                    <button id="form-button" class="g-recaptcha" data-sitekey="reCAPTCHA_site_key"
+                        data-callback='onSubmit' data-action='submit'>Submit</button>
                 </form>
             </div>
         </div>
