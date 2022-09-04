@@ -31,7 +31,7 @@ new myData().fetchAll().then((collection) => {
         // Add sitemap.xml
         var sitemap_content = '\n\
         <loc>https://zotokot.com/blog/' + contents[i].attributes.url + '</loc>\n\
-        <lastmod>' + String(contents[i].attributes.date).slice(0, 10) + '</lastmod>\
+        <lastmod>' + String(contents[i].attributes.updated_at).slice(0, 10) + '</lastmod>\
         ';
         fs.appendFileSync('./public/sitemap.xml', sitemap_content);
 
