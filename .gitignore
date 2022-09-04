@@ -1,7 +1,11 @@
 fonts/
 .well-known/
 database/*
-!importToSQLite3.sh
+!importSQLite3.sh
+!updateSQLite3.sh
+!README.md
+!import_test.txt
+!update_test.txt
 node_modules/
 public/images/blog/
 sitemap.xml
