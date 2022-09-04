@@ -22,33 +22,33 @@
     <div class="main">
         <div class="container-left"></div>
         <div class="container-center">
-            <h1>Contents</h1>
-            <div>
-                <table>
-                    <% for(var i in content){ %>
-                        <tr>
-                            <% var obj=content[array_len-i-1].attributes; %>
-                                <th>
-                                    <%= obj.id %>
-                                </th>
-                                <td>
-                                    <a href="<%= " blog/" + obj.url %>"><%= obj.title %></a>
-                                </td>
-                                <td>
-                                    <%= obj.created_at %>
-                                </td>
-                                <td>
-                                    <%= obj.updated_at %>
-                                </td>
-                                <td>
-                                    <%= obj.tag %>
-                                </td>
-                        </tr>
-                        <% } %>
-                </table>
+            <h1>BLOG</h1>
+            <p>音楽にまつわることを書いています。</p>
+
+
+            <div class="card-container">
+                <% for(var i in content){ %>
+                    <div class="card-item-wrapper">
+                        <% var obj=content[array_len-i-1].attributes; %>
+                            <a href="<%= " blog/" + obj.url %>">
+                                <div class="card-item">
+                                    <p class="blog-image"><img src="/images/blog/<%= obj.title %>/<%= obj.title %>.png"
+                                            alt="<%= obj.title %>"></p>
+                                    <h3>
+                                        <%= obj.title %>
+                                    </h3>
+                                    <p>
+                                        <%= obj.created_at %>
+                                    </p>
+                            </a>
+                    </div>
             </div>
+            <% } %>
         </div>
-        <div class="container-right"></div>
+
+
+    </div>
+    <div class="container-right"></div>
     </div>
     <footer class="footer">
         <div class="navigation-container">

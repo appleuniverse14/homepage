@@ -1,9 +1,14 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
 .main .container-center a {
     color: #000000;
     text-decoration: underline;
 }
 
-.main .container-center>div {
+/* .main .container-center>div {
     margin-top: 20px;
     margin-left: 50px;
     font-size: 20px;
@@ -11,4 +16,29 @@
 
 .main .container-center th {
     padding-right: 10px;
+} */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-30px / 2);
+    padding: 30px;
+}
+
+.card-item-wrapper {
+    width: calc(100% / 3 - 30px);
+    margin: calc(30px / 2);
+}
+
+.card-item {
+    outline: 1px solid #000;
+    font-size: 1.5vw;
+}
+
+.main .container-center p {
+    margin-left: initial;
+}
+
+.card-item img {
+    width: 100%;
 }
