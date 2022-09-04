@@ -3,6 +3,7 @@ fonts/
 database/*
 !importSQLite3.sh
 !updateSQLite3.sh
+!create_table.sh
 !README.md
 !import_test.txt
 !update_test.txt
