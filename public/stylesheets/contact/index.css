@@ -53,6 +53,10 @@
     margin-top: 1px;
 }
 
+form .name>input {
+    width: 200px;
+}
+
 .main .container-center #inquiry form .message>p {
     margin-top: 20px;
 }
@@ -60,6 +64,13 @@
 .main .container-center textarea {
     display: block;
     margin-top: 1px;
+    width: 700px;
+    min-width: 20%;
+    max-width: 80%;
+    line-height: 1em;
+    height: 10.1em;
+    min-height: 1em;
+    max-height: 20.1em;
 }
 
 .main .container-center .button {
@@ -69,6 +80,7 @@
     background-color: #000000;
     color: #FFFFFF;
     width: 100px;
+    margin: 0 auto 0 auto;
     transition: 0.25s;
 }
 
@@ -78,13 +90,17 @@
 }
 
 #form-button {
-    /* display: inline-block; */
+    display: block;
     border-radius: 10%;
     cursor: pointer;
     background-color: #000000;
     color: #FFFFFF;
-    width: 100px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto 0 auto;
     transition: 0.25s;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #form-button:hover {
