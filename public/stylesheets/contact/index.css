@@ -22,14 +22,20 @@
     transition: 0.25s;
 }
 
-.main .container-center a:hover {
+#Twitter-button a:hover {
     background-color: #FFFFFF;
     color: #01adfd;
 }
 
-.main .container-center #inquiry {
+#Twitter-button {
+    margin-top: 20px;
+}
+
+#inquiry {
     margin-top: 50px;
     margin-left: 50px;
+    margin: 20px;
+    background-color: chocolate;
 }
 
 .main .container-center #inquiry p {
@@ -85,3 +91,5 @@
     background-color: #FFFFFF;
     color: #000000;
 }
+
+@media (orientation: portrait) {}

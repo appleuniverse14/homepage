@@ -101,6 +101,7 @@ textarea {
 
 .main .container-center p {
     margin-left: 50px;
+    margin-right: 50px;
     font-family: 'biz-ud_gothic';
 }
 
@@ -218,4 +219,10 @@ textarea {
     font-size: 1vw;
     font-weight: bold;
     padding-top: 0.5vw;
+}
+
+@media (orientation: portrait) {
+    body {
+        background-color: aqua;
+    }
 }

@@ -27,7 +27,7 @@ new myData().fetchAll().then((collection) => {
     })
     // Generate each blog page
     var contents = collection.toArray();
-    for (let i = 0; i < contents.length; i++){
+    for (let i = 0; i < contents.length; i++) {
         // Add sitemap.xml
         var sitemap_content = '\n\
         <loc>https://zotokot.com/blog/' + contents[i].attributes.url + '</loc>\n\
@@ -49,9 +49,11 @@ new myData().fetchAll().then((collection) => {
         }
     }
 })
-.catch((err) => {
-    // Generate error page
-    return res.status(500).json({ error: true, data: { message: err.message } });
-});
+    .catch((err) => {
+        // Generate error page
+        router.get('/', (req, res, next) => {
+            res.status(500).json({ error: true, data: { message: err.message } });
+        })
+    });
 
 module.exports = router;
