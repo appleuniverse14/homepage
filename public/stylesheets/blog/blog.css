@@ -1,3 +1,39 @@
+#blog-sentence-container h1 {
+    font-size: 36px;
+    line-height: 100%;
+    margin: 6% 0 0.5% 0;
+}
+
+#blog-sentence-container h2 {
+    font-size: 32px;
+    line-height: 100%;
+    margin: 4% 0 0.5% 2%;
+}
+
+#blog-sentence-container h3 {
+    font-size: 28px;
+    line-height: 100%;
+    margin: 3% 0 0.5% 4%;
+}
+
+#blog-sentence-container h4 {
+    font-size: 24px;
+    line-height: 100%;
+    margin: 2% 0 0.5% 6%;
+}
+
+#blog-sentence-container h5 {
+    font-size: 22px;
+    line-height: 100%;
+    margin: 2% 0 0.5% 8%;
+}
+
+#blog-sentence-container h6 {
+    font-size: 20px;
+    line-height: 100%;
+    margin: 2% 0 0.5% 10%;
+}
+
 .main .container-center {
     padding: 0px;
 }
@@ -22,16 +58,20 @@
     display: block;
 }
 
-.main .container-center .blog-sentence-container {
-    margin: 1vh 4vw 5vh 4vw;
-}
-
-.main .container-center .blog-title {
+.blog-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
+    margin: 0 15% 0 15%;
 }
 
-.main .container-center .blog-date {
+.blog-create,
+.blog-update {
     text-align: right;
-    margin-bottom: 10px;
+    margin-right: 1%;
+    line-height: 150%;
+    font-size: 13px;
+}
+
+.main .container-center #blog-sentence-container {
+    margin: 1vh 4vw 5vh 4vw;
 }

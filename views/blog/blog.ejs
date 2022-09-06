@@ -10,6 +10,8 @@
     </title>
     <link rel='stylesheet' href='/stylesheets/template.css' />
     <link rel='stylesheet' href='/stylesheets/blog/blog.css' />
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/blog.js"></script>
     <script src="https://kit.fontawesome.com/635cb748ea.js" crossorigin="anonymous"></script>
 </head>
 
@@ -29,12 +31,15 @@
                     <h1 class="blog-title">
                         <%- content.title %>
                     </h1>
-                    <h6 class="blog-date">
-                        <%- content.date %>
-                    </h6>
+                    <h5 class="blog-create">
+                        投稿日時: <%- content.created_at %>
+                    </h5>
+                    <h5 class="blog-update">
+                        更新日時: <%- content.updated_at %>
+                    </h5>
                 </div>
             </div>
-            <div class="blog-sentence-container">
+            <div id="blog-sentence-container">
                 <%- content.content %>
             </div>
         </div>
