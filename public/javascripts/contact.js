@@ -1,4 +1,4 @@
-function formcheck() {
+function onSubmit(token) {
     if(document.inquiryform.name.value == "") {
         alert("お名前を入力してください。");
         return false;
@@ -7,9 +7,5 @@ function formcheck() {
         alert("本文を入力してください。");
         return false;
     }
-}
-
-function onSubmit(token) {
-    alert("hoge");
     document.getElementById("inquiryform").submit();
 }

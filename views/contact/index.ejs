@@ -12,7 +12,7 @@
     <link rel='stylesheet' href='/stylesheets/contact/index.css' />
     <script type="text/javascript" src="/javascripts/contact.js"></script>
     <script src="https://kit.fontawesome.com/635cb748ea.js" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--<script src="https://www.google.com/recaptcha/api.js"></script>--!>
 </head>
 
 <body>
@@ -27,7 +27,6 @@
             <h1>CONTACT</h1>
             <div class="text-container">
                 <p>お名前とお問い合わせ内容を入力し、送信ボタンを押してください。</p>
-                <!-- <p>Twitterのダイレクトメッセージも開放しています。→ <a href="https://twitter.com/zotokot"><span>Twitter</span></a></p> -->
                 <p>Twitterのダイレクトメッセージも開放しています。</p>
                 <p id="Twitter-button"><a href="https://twitter.com/zotokot"><span>Twitter</span></a></p>
             </div>
@@ -42,7 +41,6 @@
                         <p>内容</p>
                         <textarea name="message" maxlength="10000" placeholder="内容(10000字まで)"></textarea>
                     </div>
-                    <input class="button" type="submit" value="送信">
                     <button id="form-button" class="g-recaptcha" data-sitekey="6Lc6-9AhAAAAAOEQ3EWvd6LNZ6J5MIXWTANl_ZkB"
                         data-callback='onSubmit' data-action='submit'>Submit</button>
                 </form>

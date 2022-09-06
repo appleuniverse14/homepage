@@ -29,12 +29,12 @@ router.post('/', function (req, res, next) {
 
 router.post('/complete', function(req, res, next) {
     res.render('contact/complete', { title: 'Express', name: req.body.name, message: req.body.message });
-    var msg = req.body.name + ': ' + req.body.message;
+    var msg = 'Name: ' + req.body.name + '\n' + 'Message: ' + req.body.message;
     transporter.sendMail(
         {
             from: "pocketspla@gmail.com",
             to: "pocketspla@gmail.com",
-            subject: "try nodemailer",
+            subject: "nodemailer from homepage",
             text: msg,
         }, function (error, info) {
             if (error) {
