@@ -32,7 +32,8 @@
                 <p id="Twitter-button"><a href="https://twitter.com/zotokot"><span>Twitter</span></a></p>
             </div>
             <div id="inquiry">
-                <form name="inquiryform" action="/contact/complete" method="post" onSubmit="return formcheck()">
+                <form id="inquiryform" name="inquiryform" action="/contact/complete" method="post"
+                    onSubmit="return formcheck()">
                     <div class="name">
                         <p>お名前</p>
                         <input type="text" name="name" placeholder="お名前">
@@ -42,7 +43,7 @@
                         <textarea name="message" maxlength="10000" placeholder="内容(10000字まで)"></textarea>
                     </div>
                     <input class="button" type="submit" value="送信">
-                    <button id="form-button" class="g-recaptcha" data-sitekey="reCAPTCHA_site_key"
+                    <button id="form-button" class="g-recaptcha" data-sitekey="6Lc6-9AhAAAAAOEQ3EWvd6LNZ6J5MIXWTANl_ZkB"
                         data-callback='onSubmit' data-action='submit'>Submit</button>
                 </form>
             </div>

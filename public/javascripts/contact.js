@@ -10,5 +10,6 @@ function formcheck() {
 }
 
 function onSubmit(token) {
-    document.getElementById("form-button").submit();
+    alert("hoge");
+    document.getElementById("inquiryform").submit();
 }
