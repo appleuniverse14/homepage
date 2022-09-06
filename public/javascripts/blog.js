@@ -14,7 +14,6 @@ $(function () {
 window.onload = function () {
     var sentences = document.getElementById('blog-sentence-container');
     var children = sentences.childNodes;
-    console.log(children);
     for (let i = 1; i < children.length-1; i++){
         if (children[i].tagName != "undefined" && children[i].tagName != "H1" && children[i].tagName != "H2" && children[i].tagName != "H3" && children[i].tagName != "H4" && children[i].tagName != "H5" && children[i].tagName != "H6") {
             var margin_default = 4;

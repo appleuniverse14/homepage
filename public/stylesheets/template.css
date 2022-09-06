@@ -94,11 +94,11 @@ textarea {
 }
 
 .main .container-left {
-    width: 12.5%;
+    width: 15%;
 }
 
 .main .container-center {
-    width: 75%;
+    width: 70%;
     background-color: #FFFFFF;
     padding: 3vh 4vw 3vh 4vw;
 }
@@ -110,7 +110,7 @@ textarea {
 }
 
 .main .container-right {
-    width: 12.5%;
+    width: 15%;
     text-align: center;
 }
 
@@ -231,6 +231,6 @@ textarea {
 
 @media (orientation: portrait) {
     body {
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 }
