@@ -100,7 +100,7 @@ textarea {
 .main .container-center {
     width: 75%;
     background-color: #FFFFFF;
-    padding: 5vh 4vw 5vh 4vw;
+    padding: 3vh 4vw 3vh 4vw;
 }
 
 .main .container-center p {
@@ -202,8 +202,7 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: block;
-    -webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
+    transition: .4s;
     width: 60%;
     margin: 0;
     padding: 0;
@@ -223,6 +222,11 @@ textarea {
     font-size: 1vw;
     font-weight: bold;
     padding-top: 0.5vw;
+    transition: .4s;
+}
+
+.button-to-top a:hover p {
+    color: #000000;
 }
 
 @media (orientation: portrait) {

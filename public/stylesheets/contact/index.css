@@ -1,5 +1,5 @@
 .main .container-center>h1 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .main .container-center .text-container>p {
@@ -22,19 +22,17 @@
     transition: 0.25s;
 }
 
+#Twitter-button {
+    margin-top: 20px;
+}
+
 #Twitter-button a:hover {
     background-color: #FFFFFF;
     color: #01adfd;
 }
 
-#Twitter-button {
-    margin-top: 20px;
-}
-
 #inquiry {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin: 20px;
+    margin: 40px 20px 20px 50px;
 }
 
 .main .container-center #inquiry p {
@@ -63,7 +61,7 @@ form .name>input {
 .main .container-center textarea {
     display: block;
     margin-top: 1px;
-    width: 300px;
+    width: 700px;
     min-width: 20%;
     max-width: 80%;
     line-height: 1em;
@@ -106,7 +104,8 @@ form .name>input {
     background-color: #FFFFFF;
     color: #000000;
 }
-*{
+
+* {
     margin: initial initial initial initial;
     padding: initial initial initial initial;
     margin-left: initial;
