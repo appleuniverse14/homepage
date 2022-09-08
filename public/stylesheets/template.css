@@ -70,7 +70,7 @@ textarea {
     text-align: center;
 }
 
-.header .logo_header {
+.logo_header {
     height: 100%;
 }
 
@@ -82,7 +82,7 @@ textarea {
     text-align: center;
 }
 
-.footer .logo_footer {
+.logo_footer {
     height: 100%;
 }
 
@@ -90,26 +90,25 @@ textarea {
 /* Main */
 .main {
     display: flex;
-    /* justify-content: center; */
 }
 
-.main .container-left {
+.container-left {
     width: 20%;
 }
 
-.main .container-center {
+.container-center {
     width: 60%;
     background-color: #FFFFFF;
     padding: 3vh 4vw 3vh 4vw;
 }
 
-.main .container-center p {
+.container-center p {
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'biz-ud_gothic';
 }
 
-.main .container-right {
+.container-right {
     width: 20%;
     text-align: center;
 }
@@ -132,19 +131,16 @@ textarea {
 }
 
 .navigation-container ul .nav-item {
-    /* width: 15vw; */
     width: 250px;
     height: 9vh;
     border-style: solid;
     border-color: #FFFFFF;
     box-sizing: border-box;
-    /* border-width: medium medium medium 0; */
     border-width: 2px 1px 2px 1px;
     background-color: #000000;
 }
 
 .navigation-container ul .nav-item:first-child {
-    /* border-width: medium medium medium medium; */
     border-width: 2px 1px 2px 2px;
 }
 
@@ -181,6 +177,7 @@ textarea {
     line-height: 100%;
     font-weight: bold;
 }
+
 
 /* Button to top */
 .button-to-top {
@@ -237,33 +234,28 @@ textarea {
 }
 
 @media (orientation: portrait) {
-    body {
-        background-color: aqua;
-    }
-
-    .main .container-left {
+    .container-left {
         width: 0%;
     }
 
-    .main .container-center {
+    .container-center {
         width: 100%;
         background-color: #FFFFFF;
         padding: 3vh 4vw 3vh 4vw;
     }
 
-    .main .container-center p {
+    .container-center p {
         margin-left: 5%;
         margin-right: 5%;
         font-family: 'biz-ud_gothic';
     }
 
-    .main .container-right {
+    .container-right {
         width: 0%;
         text-align: center;
     }
 
     .navigation-container ul .nav-item {
-        /* width: 25vw; */
         width: 180px;
         height: 9vh;
         border-style: solid;

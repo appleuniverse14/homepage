@@ -127,19 +127,19 @@ a:active {
     position: absolute;
 }
 
-.links ul {
+.container {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-size: 0;
     border-width: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.links .nav-item {
+.nav-item {
     display: inline-block;
-    /* width: 16vw;
-    height: 16vw; */
     width: 18vw;
     height: 18vw;
     margin-left: auto;
@@ -148,42 +148,37 @@ a:active {
     padding: 0;
 }
 
-.links .nav-item.soundcloud {
+.nav-item.soundcloud {
     margin-left: 0px;
     margin-right: auto;
 }
 
-.links .nav-item.twitter {
+.nav-item.twitter {
     margin-left: auto;
     margin-right: auto;
 }
 
-.links .nav-item.youtube {
+.nav-item.youtube {
     margin-left: auto;
     margin-right: 0px;
 }
 
-.links .nav-item.blog {
+.nav-item.blog {
     margin-left: 0px;
     margin-right: auto;
 }
 
-.links .nav-item.contact {
+.nav-item.contact {
     margin-left: auto;
     margin-right: auto;
 }
 
-.links .nav-item.about-me {
+.nav-item.about-me {
     margin-left: auto;
     margin-right: 0px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.links .nav-item a {
+.nav-item a {
     display: block;
     width: 100%;
     height: 100%;
@@ -202,7 +197,7 @@ a:active {
     border-radius: 50%;
 }
 
-.links .container .nav-item a span {
+.container .nav-item a span {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -214,43 +209,43 @@ a:active {
     white-space: nowrap;
 }
 
-.links .nav-item.soundcloud a {
+.nav-item.soundcloud a {
     background-color: #883311;
 }
 
-.links .nav-item.soundcloud a:hover {
+.nav-item.soundcloud a:hover {
     background-color: #ff6b3c;
     color: #FFFFFF;
 }
 
-.links .nav-item.twitter a {
+.nav-item.twitter a {
     background-color: #014466;
 }
 
-.links .nav-item.twitter a:hover {
+.nav-item.twitter a:hover {
     background-color: #01adfd;
     color: #FFFFFF;
 }
 
-.links .nav-item.youtube a {
+.nav-item.youtube a {
     background-color: #660000;
 }
 
-.links .nav-item.youtube a:hover {
+.nav-item.youtube a:hover {
     background-color: #EE1111;
     color: #FFFFFF;
 }
 
-.links .nav-item.blog a {
+.nav-item.blog a {
     background-color: #135020;
 }
 
-.links .nav-item.blog a:hover {
+.nav-item.blog a:hover {
     background-color: #269941;
     color: #FFFFFF;
 }
 
-.links .nav-item.about-me a {
+.nav-item.about-me a {
     /* background-color: #222222;
     color: #FFFFFF; */
     background-color: #000000;
@@ -262,21 +257,20 @@ a:active {
     color: #FFFFFF;
 } */
 
-.links .nav-item.contact a {
+.nav-item.contact a {
     background-color: #222222;
     color: #FFFFFF;
 }
 
-.links .nav-item.contact a:hover {
+.nav-item.contact a:hover {
     background-color: #666666;
     color: #FFFFFF;
 }
 
-.links .nav-item a p {
+.nav-item a p {
     font-size: 60%;
 }
 
-/* @media (max-width: 960px){ */
 @media (orientation: portrait) {
     .header {
         margin-top: 3vh;
@@ -286,9 +280,7 @@ a:active {
     }
 
     .wrapper {
-        /* width: 60vw; */
         width: 90vw;
-        /* height: 35vw; */
         height: 70vh;
         margin-left: auto;
         margin-right: auto;
@@ -308,13 +300,11 @@ a:active {
     .links {
         width: 100%;
         height: 100%;
-        /* margin-top: 15vmin; */
         margin-top: 7vh;
-        /* margin-top: 10%; */
         position: absolute;
     }
 
-    .links ul {
+    .containter {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -323,10 +313,8 @@ a:active {
         border-width: 5px;
     }
 
-    .links .nav-item {
+    .nav-item {
         display: inline-block;
-        /* width: 16vw;
-        height: 16vw; */
         width: 40vw;
         height: 40vw;
         margin-left: auto;
@@ -335,86 +323,61 @@ a:active {
         padding: 0;
     }
 
-    .links .nav-item.soundcloud {
+    .nav-item.soundcloud {
         margin-left: 0px;
         margin-right: auto;
     }
 
-    .links .nav-item.twitter {
+    .nav-item.twitter {
         margin-left: auto;
         margin-right: 0px;
     }
 
-    .links .nav-item.youtube {
+    .nav-item.youtube {
         margin-left: 0px;
         margin-right: auto;
     }
 
-    .links .nav-item.blog {
+    .nav-item.blog {
         margin-left: auto;
         margin-right: 0px;
     }
 
-    .links .nav-item.contact {
+    .nav-item.contact {
         margin-left: 0px;
         margin-right: auto;
     }
 
-    .links .nav-item.about-me {
+    .nav-item.about-me {
         margin-left: auto;
         margin-right: 0px;
     }
 
-    .links .nav-item a {
+    .nav-item a {
         font-size: 8vw;
     }
 
-    .links .nav-item.soundcloud a span {
+    .nav-item.soundcloud a span {
         font-size: 5.75vw;
     }
 
-    .links .nav-item.twitter a span {
+    .nav-item.twitter a span {
         font-size: 7vw;
     }
 
-    .links .nav-item.youtube a span {
+    .nav-item.youtube a span {
         font-size: 7vw;
     }
 
-    .links .nav-item.blog a span {
+    .nav-item.blog a span {
         font-size: 7vw;
     }
 
-    .links .nav-item.about-me a span {
+    .nav-item.about-me a span {
         font-size: 6vw;
     }
 
-    .links .nav-item.contact a span {
+    .nav-item.contact a span {
         font-size: 7vw;
     }
-
-    /* .wrapper {
-        width: 60vmin;
-        height: 80vmin;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-    }
-
-    .links {
-        width: 100%;
-        height: 100%;
-        margin-top: 5vh;
-        position: absolute;
-    }
-
-    .links .nav-item {
-        display: inline-block;
-        width: 25vmin;
-        height: 25vmin;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3%;
-        padding: 0;
-    } */
 }

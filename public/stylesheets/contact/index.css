@@ -1,17 +1,17 @@
-.main .container-center>h1 {
+.container-center>h1 {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.main .container-center .text-container>p {
+.text-container>p {
     margin-bottom: 10px;
 }
 
-.main .container-center a,
-.main .container-center a:link,
-.main .container-center a:visited,
-.main .container-center a:hover,
-.main .container-center a:active {
+.container-center a,
+.container-center a:link,
+.container-center a:visited,
+.container-center a:hover,
+.container-center a:active {
     background-color: #01adfd;
     padding: 7.5px;
     border-radius: 9999px;
@@ -33,38 +33,36 @@
 }
 
 #inquiry {
-    /* margin: 40px 20px 20px 5%; */
     margin: 40px 20px 20px 0px;
     width: 100%;
 }
 
-.main .container-center #inquiry p {
-    /* margin-left: 0px; */
+.container-center #inquiry p {
     margin-left: 5%;
     margin-bottom: 0px;
     font-weight: bold;
 }
 
-.main .container-center #inquiry .message {
+#inquiry .message {
     margin-bottom: 20px;
 }
 
-.main .container-center input {
+.container-center input {
     display: block;
     margin-top: 1px;
     margin-left: 5%;
 }
 
-form .name>input {
+#inquiryform .name>input {
     width: 200px;
     max-width: 70%;
 }
 
-.main .container-center #inquiry form .message>p {
+#inquiry form .message>p {
     margin-top: 20px;
 }
 
-.main .container-center textarea {
+.container-center textarea {
     display: block;
     margin-top: 1px;
     margin-left: 5%;
@@ -77,8 +75,7 @@ form .name>input {
     max-height: 20.1em;
 }
 
-.main .container-center .button {
-    /* display: inline-block; */
+.container-center .button {
     border-radius: 10%;
     cursor: pointer;
     background-color: #000000;
@@ -88,7 +85,7 @@ form .name>input {
     transition: 0.25s;
 }
 
-.main .container-center .button:hover {
+.container-center .button:hover {
     background-color: #FFFFFF;
     color: #000000;
 }
