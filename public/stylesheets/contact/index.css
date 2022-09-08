@@ -67,7 +67,7 @@
     margin-top: 1px;
     margin-left: 5%;
     width: 700px;
-    min-width: 20%;
+    /* min-width: 20%; */
     max-width: 90%;
     line-height: 1em;
     height: 10.1em;
@@ -118,7 +118,6 @@
 
 @media (orientation: portrait) {
     .container-center textarea {
-        width: 600px;
-        max-width: 70%;
+        width: 75vw;
     }
 }
