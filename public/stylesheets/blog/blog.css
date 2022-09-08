@@ -11,32 +11,32 @@
 
 #blog-sentence-container h1 {
     font-size: 36px;
-    margin: 6% 0 0.5% 0;
+    margin: 8% 0 0.5% 0;
 }
 
 #blog-sentence-container h2 {
     font-size: 32px;
-    margin: 4% 0 0.5% 2%;
+    margin: 4% 0 0.5% 4%;
 }
 
 #blog-sentence-container h3 {
     font-size: 28px;
-    margin: 3% 0 0.5% 4%;
+    margin: 4% 0 0.5% 7%;
 }
 
 #blog-sentence-container h4 {
     font-size: 24px;
-    margin: 2% 0 0.5% 6%;
+    margin: 3% 0 0.5% 9%;
 }
 
 #blog-sentence-container h5 {
     font-size: 22px;
-    margin: 2% 0 0.5% 8%;
+    margin: 3% 0 0.5% 10%;
 }
 
 #blog-sentence-container h6 {
     font-size: 20px;
-    margin: 2% 0 0.5% 10%;
+    margin: 3% 0 0.5% 11%;
 }
 
 #blog-sentence-container {
@@ -84,4 +84,11 @@
 
 #blog-sentence-container {
     margin: 1vh 4vw 5vh 4vw;
+}
+
+@media (orientation: portrait) {
+    #blog-sentence-container {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 }

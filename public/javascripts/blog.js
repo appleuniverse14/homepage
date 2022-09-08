@@ -15,14 +15,32 @@ window.onload = function () {
     var sentences = document.getElementById('blog-sentence-container');
     var children = sentences.childNodes;
     for (let i = 1; i < children.length-1; i++){
-        if (children[i].tagName != "undefined" && children[i].tagName != "H1" && children[i].tagName != "H2" && children[i].tagName != "H3" && children[i].tagName != "H4" && children[i].tagName != "H5" && children[i].tagName != "H6") {
-            var margin_default = 4;
-            var margin_h1 = 0;
-            var margin_h2 = 1;
-            var margin_h3 = 3;
-            var margin_h4 = 4;
-            var margin_h5 = 6;
-            var margin_h6 = 7;
+        var margin_default = 0;
+        var margin_h1 = 0;
+        var margin_h2 = 4;
+        var margin_h3 = 8;
+        var margin_h4 = 12;
+        var margin_h5 = 16;
+        var margin_h6 = 20;
+        if (children[i].tagName == "H1") {
+            children[i].style.marginLeft = String(margin_default + margin_h1) + "%";
+        }
+        else if (children[i].tagName == "H2") {
+            children[i].style.marginLeft = String(margin_default + margin_h2) + "%";
+        }
+        else if (children[i].tagName == "H3") {
+            children[i].style.marginLeft = String(margin_default + margin_h3) + "%";
+        }
+        else if (children[i].tagName == "H4") {
+            children[i].style.marginLeft = String(margin_default + margin_h4) + "%";
+        }
+        else if (children[i].tagName == "H5") {
+            children[i].style.marginLeft = String(margin_default + margin_h5) + "%";
+        }
+        else if (children[i].tagName == "H6") {
+            children[i].style.marginLeft = String(margin_default + margin_h6) + "%";
+        }
+        else if (children[i].tagName != "undefined" && children[i].tagName != "H1" && children[i].tagName != "H2" && children[i].tagName != "H3" && children[i].tagName != "H4" && children[i].tagName != "H5" && children[i].tagName != "H6") {
             for (let j = i; j >= 0; j--){
                 if (children[j].tagName == "H1") {
                     children[i].style.marginLeft = String(margin_default + margin_h1) + "%";
