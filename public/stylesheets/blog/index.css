@@ -3,16 +3,6 @@
     box-sizing: border-box;
 }
 
-/* .main .container-center>div {
-    margin-top: 20px;
-    margin-left: 50px;
-    font-size: 20px;
-}
-
-.main .container-center th {
-    padding-right: 10px;
-} */
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +26,7 @@
     font-size: 2.5vh;
 }
 
-.main .container-center p {
+.container-center p {
     margin-left: initial;
 }
 
@@ -52,7 +42,6 @@
     color: #000000;
     margin-left: 10px;
 }
-
 
 
 @media (orientation: portrait) {
@@ -74,7 +63,6 @@
     }
 
     .card-item {
-        /* outline: 1px solid #000; */
         font-size: 2vh;
     }
 }

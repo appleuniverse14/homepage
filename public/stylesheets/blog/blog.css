@@ -48,19 +48,19 @@
     padding: 0px;
 }
 
-.main .container-center .blog-title-container {
+.blog-title-container {
     background-color: #CCCCCC;
     position: relative;
     margin-bottom: 20px;
 }
 
-.main .container-center .blog-title-container>div {
+.blog-title-container>div {
     position: absolute;
     bottom: 0px;
     width: 100%;
 }
 
-.main .container-center .blog-title-container .blog-image {
+.blog-title-container .blog-image {
     width: 100%;
     height: 20vh;
     object-fit: cover;
@@ -82,6 +82,6 @@
     font-size: 13px;
 }
 
-.main .container-center #blog-sentence-container {
+#blog-sentence-container {
     margin: 1vh 4vw 5vh 4vw;
 }
