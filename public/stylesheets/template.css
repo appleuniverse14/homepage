@@ -94,11 +94,11 @@ textarea {
 }
 
 .main .container-left {
-    width: 15%;
+    width: 20%;
 }
 
 .main .container-center {
-    width: 70%;
+    width: 60%;
     background-color: #FFFFFF;
     padding: 3vh 4vw 3vh 4vw;
 }
@@ -110,7 +110,7 @@ textarea {
 }
 
 .main .container-right {
-    width: 15%;
+    width: 20%;
     text-align: center;
 }
 
@@ -132,17 +132,24 @@ textarea {
 }
 
 .navigation-container ul .nav-item {
-    width: 15vw;
+    /* width: 15vw; */
+    width: 250px;
     height: 9vh;
     border-style: solid;
     border-color: #FFFFFF;
     box-sizing: border-box;
     border-width: medium medium medium 0;
+    /* border-width: 2px 1px 2px 1px; */
     background-color: #000000;
 }
 
 .navigation-container ul .nav-item:first-child {
     border-width: medium medium medium medium;
+    /* border-width: 2px 1px 2px 2px; */
+}
+
+.navigation-container ul .nav-item:last-child {
+    border-width: 2px 2px 2px 1px;
 }
 
 .navigation-container ul .nav-item a {
@@ -231,6 +238,56 @@ textarea {
 
 @media (orientation: portrait) {
     body {
-        /* background-color: aqua; */
+        background-color: aqua;
+    }
+
+    .main .container-left {
+        width: 0%;
+    }
+
+    .main .container-center {
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 3vh 4vw 3vh 4vw;
+    }
+
+    .main .container-center p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: 'biz-ud_gothic';
+    }
+
+    .main .container-right {
+        width: 0%;
+        text-align: center;
+    }
+
+    .navigation-container ul .nav-item {
+        /* width: 25vw; */
+        width: 180px;
+        height: 9vh;
+        border-style: solid;
+        border-color: #FFFFFF;
+        box-sizing: border-box;
+        border-width: medium medium medium 0;
+        background-color: #000000;
+    }
+
+    .navigation-container ul .nav-item a i {
+        font-size: 1.5vw;
+        display: block;
+        height: 3.5vh;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1vh;
+    }
+
+    .navigation-container ul .nav-item a span {
+        font-size: 2.0vw;
+        display: block;
+        height: 5vh;
+        line-height: 100%;
+        font-weight: bold;
     }
 }
