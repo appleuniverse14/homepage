@@ -187,8 +187,6 @@ textarea {
 /* Button to top */
 .button-to-top {
     position: fixed;
-    /* width: 7.5vw;
-    height: 7.5vw; */
     width: 100px;
     height: 100px;
     right: 2vmin;
@@ -217,7 +215,7 @@ textarea {
     transform: translate(-50%, -50%);
     display: block;
     transition: .4s;
-    width: 60%;
+    width: 70%;
     margin: 0;
     padding: 0;
 }
@@ -233,7 +231,7 @@ textarea {
 
 .button-to-top a p {
     color: #FFFFFF;
-    font-size: 1vw;
+    font-size: 15px;
     font-weight: bold;
     padding-top: 0.5vw;
     transition: .4s;
@@ -292,4 +290,12 @@ textarea {
         font-weight: bold;
     }
 
+    .button-to-top {
+        width: 75px;
+        height: 75px;
+    }
+
+    .button-to-top a p {
+        font-size: 10px;
+    }
 }
