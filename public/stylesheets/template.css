@@ -187,10 +187,12 @@ textarea {
 /* Button to top */
 .button-to-top {
     position: fixed;
-    width: 7.5vw;
-    height: 7.5vw;
-    right: 1vmin;
-    bottom: 3vmin;
+    /* width: 7.5vw;
+    height: 7.5vw; */
+    width: 100px;
+    height: 100px;
+    right: 2vmin;
+    bottom: 4vmin;
     text-align: center;
     border-style: solid;
     border-width: 2px;
